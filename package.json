@@ -1,0 +1,32 @@
+{
+    "name": "higgs",
+    "version": "0.1.5",
+    "author": "Daniel Stein",
+    "private": true,
+    "engines": {
+        "node": "~0.10.26",
+        "npm": "~1.4.4"
+    },
+    "dependencies": {
+        "bcrypt": "*",
+        "body-parser": "*",
+        "cookie-parser": "*",
+        "cookie-session": "*",
+        "express-session": "*",
+        "express": "~4.0.0-rc3",
+        "jade": "*",
+        "rethinkdb": "*"
+    },
+    "devDependencies": {
+        "bower": "*",
+        "grunt-contrib-coffee": "*",
+        "grunt-contrib-compass": "*",
+        "grunt-contrib-copy": "*",
+        "grunt-contrib-imagemin": "*",
+        "grunt-contrib-jade": "*",
+        "grunt-contrib-jshint": "*",
+        "grunt-contrib-uglify": "*",
+        "grunt-contrib-watch": "*",
+        "grunt": "*"
+    }
+}

@@ -1,0 +1,17 @@
+{
+    "name": "higgs",
+    "version": "0.1.5",
+    "author": "Daniel Stein",
+    "private": true,
+    "dependencies": {
+        "angular": "*",
+        "angular-animate": "*",
+        "angular-cookies": "*",
+        "angular-route": "*",
+        "angular-touch": "*",
+        "jquery": "*",
+        "modernizr": "*",
+        "normalize.css": "*",
+        "gsap": "*"
+    }
+}

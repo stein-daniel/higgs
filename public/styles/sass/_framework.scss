@@ -1,0 +1,34 @@
+// Framework
+
+// Imports
+@import "breakpoint";
+@import "susy";
+
+// Grids
+$susy: (
+    columns: 4,
+    gutters: 16px/68px,
+    gutter-position: split,
+    global-box-sizing: border-box,
+    debug: (
+        image: show,
+        color: rgba(#c66666, .25),
+        output: background
+    )
+);
+
+$phone: ();
+$phone-wide: ();
+
+$tablet: (
+    columns: 8,
+    gutters: 16px/82px
+);
+$tablet-wide: ();
+
+$desktop: (
+    columns: 16,
+    column-width: 65px,
+    gutters: 16px/65px
+);
+$desktop-wide: ();
