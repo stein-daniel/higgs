@@ -11,8 +11,7 @@ var bcrypt = require("bcrypt"),
     courier = require('./modules/courier'),
     storage = require('./modules/storage');
 
-var server = express(),
-    router = express.Router();
+var server = express();
 
 // Server
 server.set("view engine", "jade");
@@ -20,13 +19,13 @@ server.set("views", __dirname + "/views");
 
 server.use(bodyParser());
 server.use(cookieParser());
-server.use(cookieSession());
-server.use(expressSession({ secret: "..." }));
+server.use(cookieSession({ key: ["1", "2"] }));
+server.use(expressSession({ secret: "1234" }));
 server.use(express.static(__dirname + "/public"));
 
-router.get("/", courier.index);
-router.get("/partials/:partial", courier.partial);
-router.get("*", courier.index);
+server.get("/", courier.index);
+server.get("/partials/:partial", courier.partial);
+server.get("*", courier.index);
 
 server.listen(4000, function(error) {
     if (!error) {

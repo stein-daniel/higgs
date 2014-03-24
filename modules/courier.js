@@ -1,8 +1,7 @@
 "use strict";
 
 // Requirements
-var rethinkdb = require("rethinkdb"),
-    storage = require('./modules/storage');
+var rethinkdb = require("rethinkdb");
 
 // Courier
 exports.index = function(request, response) {
