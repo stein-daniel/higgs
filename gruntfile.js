@@ -117,7 +117,7 @@ module.exports = function(grunt) {
                 },
                 files: [
                     {
-                        src: ["public/assets/scripts/*.js"]
+                        src: ["public/scripts/*.js"]
                     }
                 ]
             }
@@ -127,7 +127,7 @@ module.exports = function(grunt) {
                 mangle: true
             },
             files: {
-                "public/assets/scripts/app.min.js": ["public/assets/scripts/*.js"]
+                "public/scripts/app.min.js": ["public/scripts/*.js"]
             }
         },
         watch: {
@@ -138,13 +138,13 @@ module.exports = function(grunt) {
                 files: ["views/**/*.jade"]
             },
             styles: {
-                files: ["public/assets/styles/sass/**/*.scss"],
+                files: ["public/styles/**/*.scss"],
                 tasks: ["compass:development"]
             },
             scripts: {
                 files: [
-                    "public/assets/scripts/coffee/**/*.coffee",
-                    "public/assets/scripts/*.js"
+                    "public/scripts/coffee/**/*.coffee",
+                    "public/scripts/**/*.js"
                 ],
                 tasks: [
                     "coffee:development",

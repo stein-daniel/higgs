@@ -1,1 +1,11 @@
 // Layout
+@include border-box-sizing;
+
+// Containers
+.outer {
+    height: 100%;
+    width: 100%;
+}
+.inner {
+    @include container;
+}

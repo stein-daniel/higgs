@@ -32,3 +32,31 @@ $desktop: (
     gutters: 16px/65px
 );
 $desktop-wide: ();
+
+// Breakpoints
+$phone-breakpoint: min-width 320px;
+$phone-wide-breakpoint: 0;
+
+$tablet-breakpoint: min-width 768px;
+$tablet-wide-breakpoint: 0;
+
+$desktop-breakpoint: min-width 1024px;
+$desktop-wide-breakpoint: 0;
+
+@include breakpoint($phone-wide-breakpoint) {
+    @include layout($phone-wide);
+}
+
+@include breakpoint($tablet-breakpoint) {
+    @include layout($tablet);
+}
+@include breakpoint($tablet-wide-breakpoint) {
+    @include layout($tablet-wide);
+}
+
+@include breakpoint($desktop-breakpoint) {
+    @include layout($desktop);
+}
+@include breakpoint($desktop-wide-breakpoint) {
+    @include layout($desktop-wide);
+}
